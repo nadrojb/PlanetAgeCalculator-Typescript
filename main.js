@@ -18,6 +18,9 @@ function calculateAge(getRadioButtonValue, ageInput) {
 calculateButton.addEventListener("click", function (e) {
     outputSection.style.display = "block";
     var yearsText = document.querySelector("#years");
+    var planet = document.querySelector("#planet");
     var result = Math.round(calculateAge(getRadioButtonValue, ageInput));
     yearsText.textContent = result.toString();
+    planet.textContent =
+    ;
 });

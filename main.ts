@@ -24,6 +24,8 @@ function calculateAge(getRadioButtonValue, ageInput: HTMLInputElement): number {
 calculateButton.addEventListener("click", (e: MouseEvent) => {
   outputSection.style.display = "block";
   let yearsText = document.querySelector("#years") as HTMLSpanElement;
+  let planet = document.querySelector("#planet") as HTMLSpanElement;
   let result = Math.round(calculateAge(getRadioButtonValue, ageInput));
-   yearsText.textContent = result.toString();
+  yearsText.textContent = result.toString();
+  planet.textContent = 
 });
