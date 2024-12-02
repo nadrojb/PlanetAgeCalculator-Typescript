@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Planet Age Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css" />
+    <style>
+      * {
+        font-family: "Press Start 2P";
+      }
+
+      main.nes-container.is-rounded {
+        max-width: 1000px;
+        width: 80%;
+        margin: 20px auto;
+      }
+
+      .nes-field,
+      .mb-30 {
+        margin-bottom: 30px;
+      }
+
+      #output {
+        display: none;
+        margin-top: 20px;
+      }
+
+      #output i {
+        display: none;
+      }
+    </style>
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <main class="nes-container is-rounded">
+      <div class="nes-field">
+        <label for="age">Current age:</label>
+        <input type="number" min="1" max="99" id="age" class="nes-input" />
+      </div>
+
+      <div class="mb-30">
+        <h4>Pick a planet</h4>
+        <label>
+          <input
+            type="radio"
+            class="nes-radio"
+            name="planet"
+            value="0.2408467"
+            checked
+          />
+          <span>Mercury</span>
+        </label>
+        <label>
+          <input
+            type="radio"
+            class="nes-radio"
+            name="planet"
+            value="0.61519726"
+          />
+          <span>Venus</span>
+        </label>
+        <label>
+          <input
+            type="radio"
+            class="nes-radio"
+            name="planet"
+            value="1.8808158"
+          />
+          <span>Mars</span>
+        </label>
+        <label>
+          <input
+            type="radio"
+            class="nes-radio"
+            name="planet"
+            value="11.862615"
+          />
+          <span>Jupiter</span>
+        </label>
+        <label>
+          <input
+            type="radio"
+            class="nes-radio"
+            name="planet"
+            value="29.447498"
+          />
+          <span>Saturn</span>
+        </label>
+      </div>
+
+      <div class="mb-30">
+        <button id="calc" class="nes-btn is-primary">Calculate</button>
+      </div>
+
+      <section id="output" class="message-list">
+        <section class="message -left">
+          <div class="nes-balloon from-left">
+            <h2>
+              You would be <span id="years"></span> years old on
+              <span id="planet"></span>
+            </h2>
+          </div>
+          <i class="nes-mario"></i>
+          <i class="nes-ash"></i>
+          <i class="nes-bulbasaur"></i>
+          <i class="nes-charmander"></i>
+          <i class="nes-squirtle"></i>
+          <i class="nes-kirby"></i>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "files": ["main.ts"],
+  "include": ["./src/**/*.ts"],
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["ES6", "DOM"],//dont need the dom for writing backend JS
+    "checkJs": false
+  }
+}
